@@ -1,0 +1,591 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background: url('https://cdn.pixabay.com/photo/2016/10/29/10/12/abstract-1780370_1280.png')no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    color: rgb(239, 237, 237);
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 450px;
+    height: 450px;
+    box-shadow: 2px 2px 13px rgb(239, 237, 237);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.selectColors{
+}
+
+.selectColors .colors {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid black; */
+    margin-left: 8px;
+    margin-top: 50px;
+}
+.selectColors h1{
+    text-align: center; margin-top: 60px;
+}
+.left ul li {
+    list-style: none;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    cursor: pointer;
+}
+#selectEyes{
+    display: none;
+}
+.selectEyes .eyes {
+    display: flex;
+    margin: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.selectEyes h1{
+    text-align: center; margin-top: 60px;
+}
+#selectMouth{
+    display: none;
+}
+
+.selectMouth .mouth {
+    display: flex;
+    margin: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.selectMouth h1{
+    text-align: center; margin-top: 60px;
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.63);
+    box-shadow: 3px 3px 20px rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.eye1 {
+    background-color: black;
+    width: 8px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.eye2 {
+    width: 10px;
+    height: 5px;
+    border: 3px solid black;
+    border-radius: 100%;
+    border-bottom: hidden;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 50px;
+}
+
+.eye3 {
+    background-color: black;
+    width: 10px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.eye4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: black;
+}
+
+.eye5 {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.eye61 {
+    background-color: black;
+    width: 8px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.eye62 {
+    width: 10px;
+    height: 4px;
+    border: 3px solid black;
+    border-radius: 100%;
+    border-bottom: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#next {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px 14px rgb(255, 252, 252);
+}
+
+#prev {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px 14px rgb(255, 252, 252);
+}
+
+#emoji {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 4px solid black;
+    position: relative;
+    /* background-color: red; */
+}
+
+.emojieye1 .lefteye1 {
+    position: absolute;
+    top: 68px;
+    left: 59px;
+    background-color: black;
+    width: 18px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.emojieye2 .lefteye2 {
+    position: absolute;
+    top: 68px;
+    left: 45px;
+    width: 35px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 100%;
+    border-bottom: hidden;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 50px;
+}
+
+.emojieye3 .lefteye3 {
+    position: absolute;
+    top: 64px;
+    left: 49px;
+    background-color: black;
+    width: 30px;
+    height: 39px;
+    border-radius: 100%;
+}
+
+.emojieye4 .lefteye4 {
+    position: absolute;
+    top: 53px;
+    left: 52px;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.emojieye5 .lefteye5 {
+    position: absolute;
+    top: 64px;
+    left: 58px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.emojieye6 .lefteye6 {
+    position: absolute;
+    top: 64px;
+    left: 58px;
+    background-color: black;
+    width: 27px;
+    height: 44px;
+    border-radius: 100%;
+}
+
+.emojieye1 .righteye1 {
+    position: absolute;
+    top: 68px;
+    right: 59px;
+    background-color: black;
+    width: 18px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.emojieye2 .righteye2 {
+    position: absolute;
+    top: 68px;
+    right: 45px;
+    width: 35px;
+    height: 20px;
+    border: 5px solid black;
+    border-radius: 100%;
+    border-bottom: hidden;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 50px;
+}
+
+.emojieye3 .righteye3 {
+    position: absolute;
+    top: 64px;
+    right: 49px;
+    background-color: black;
+    width: 30px;
+    height: 39px;
+    border-radius: 100%;
+}
+
+.emojieye4 .righteye4 {
+    position: absolute;
+    top: 53px;
+    right: 52px;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.emojieye5 .righteye5 {
+    position: absolute;
+    top: 64px;
+    right: 58px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.emojieye6 .righteye6 {
+    position: absolute;
+    top: 73px;
+    right: 50px;
+    width: 35px;
+    height: 18px;
+    border: 5px solid black;
+    border-radius: 100%;
+    border-bottom: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.mouth1 {
+    width: 30px;
+    height: 17px;
+    border: 2px solid black;
+    background-color: rgb(232, 223, 223);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.teeth {
+    width: 28px;
+    border: 1px solid black;
+    position: absolute;
+    top: 6px;
+}
+
+.tongue {
+    width: 16px;
+    height: 6px;
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    background-color: #a74e4e;
+}
+
+.mouth2 {
+    width: 31px;
+    height: 13px;
+    border: 2px solid black;
+    border-top: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.mouth3 {
+    width: 30px;
+    border: 2px solid black;
+}
+
+.mouth4 {
+    width: 24px;
+    height: 12px;
+    border: 2px solid black;
+    border-bottom: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.mouth5 {
+    width: 30px;
+    height: 16px;
+    border: 2px solid black;
+    background-color: rgb(246, 241, 241);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.line1 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 17%;
+    height: 12px;
+}
+
+.line2 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 40%;
+    height: 15px;
+}
+
+.line3 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 60%;
+    height: 15px;
+}
+
+.line4 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 83%;
+    height: 12px;
+}
+.emojimouth1 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+}
+
+.emojimouth1 .emouth1 {
+    width: 65px;
+    height: 27px;
+    border: 3px solid black;
+    background-color: rgb(232, 223, 223);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.emojimouth1 .emouth1 .eteeth {
+    width: 61px;
+    border: 1px solid black;
+    position: absolute;
+    top: 10px;
+}
+
+.emojimouth1 .emouth1 .etongue {
+    width: 30px;
+    height: 14px;
+    position: absolute;
+    background-color: red;
+    top: 12px;
+    left: 15px;
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.emojimouth2 {
+    position: absolute;
+    top: 67%;
+    left: 33%;
+    width: 71px;
+    height: 31px;
+    border: 4px solid black;
+    border-top: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.emojimouth3 {
+    position: absolute;
+    top: 70%;
+    left: 33%;
+    width: 71px;
+    border: 3px solid black;
+}
+
+.emojimouth4 {
+    position: absolute;
+    top: 63%;
+    left: 31%;
+    width: 79px;
+    height: 32px;
+    border: 4px solid black;
+    border-bottom: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.emojimouth5 {
+    position: absolute;
+    top: 69%;
+    left: 33%;
+}
+
+.emojimouth5 .emouth5 {
+    width: 66px;
+    height: 28px;
+    border: 3px solid black;
+    background-color: rgb(246, 241, 241);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.emojimouth5 .emouth5 .eteeth {
+    width: 63px;
+    top: 12px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.emojimouth5 .emouth5 .eline1 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 17%;
+    height: 21px;
+}
+
+.emojimouth5 .emouth5 .eline2 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 40%;
+    height: 27px;
+}
+
+.emojimouth5 .emouth5 .eline3 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 60%;
+    height: 27px;
+
+}
+
+.emojimouth5 .emouth5 .eline4 {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 83%;
+    height: 20px;
+}
+#text{
+    text-align: center; 
+    color: rgb(239, 237, 237);
+        font-size: 2.5rem;
+        font-family: 'Dancing Script', cursive;
+        position: absolute; 
+        bottom: 2px;
+        display: none;
+        color: #eb1212;
+}
+#superimg{
+    display: none;
+}
+#superimg img{
+    position: absolute; 
+    left: 20px; 
+    top: 40%; 
+    width: 130px; 
+    height: 130px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius:60px; 
+    border-bottom-right-radius: 60px;
+    animation-name: img;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes img{
+    20%{
+        top: 20%;
+    }
+    40%{
+        top:50%;
+    }
+    65%{
+        top: 25%;
+    }
+    75%{
+        top:50%;
+    }
+    85%{
+        top:20%;
+    }
+    100%{
+        top:40%;
+    }
+}
+#home{
+    text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#home a{
+    color: white;
+    font-size: large;
+}
